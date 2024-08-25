@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="animate__animated animate__fadeInDown">Create Your Quiz</h1>
+        <form id="quizForm" class="animate__animated animate__fadeInUp">
+            <div class="form-group">
+                <label for="question">Question:</label>
+                <input type="text" id="question" required>
+            </div>
+            <div class="form-group">
+                <label for="options">Options (comma separated):</label>
+                <input type="text" id="options" required>
+            </div>
+            <div class="form-group">
+                <label for="correctOption">Correct Option:</label>
+                <input type="text" id="correctOption" required>
+            </div>
+            <button type="submit" class="button-animated">Add Question</button>
+        </form>
+        <button id="finishQuiz" class="button-animated">Finish Quiz</button>
+        <div id="quizPreview" class="quiz-preview"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
